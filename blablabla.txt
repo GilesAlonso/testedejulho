@@ -1,2 +1,19 @@
 teste arquivo novo
 
+
+Boa noite gente!!! Conversando na live de mentoria resolvi compartilhar o passo a passo que eu costumo usar para criar um repositório local e para subir para o Github. Não tem forma correta, eu uso dessa forma e, para projetos de estudo, dá certo:
+ Crio o repositório remoto na minha conta do Github;
+ Entro na pasta do projeto que desejo criar o repositório;
+ Abro o terminal nessa pasta;
+ executo o comando: git init (para inicializar o repositório local nessa pasta);
+ executo: git remote add origin <endereço-do-repositorio-remoto> (aqui após o origin coloco o endereço do repositório que aparece no Github após a criação do repositório remoto, essa linha geralmente aparece como orientação no Github após a criação do repositório);
+ executo git add . (para adicionar tudo que está naquela pasta na área de stage para fazer o commit);
+ executo git status (para ver se está tudo ok, os arquivos que estiver sendo observados pelo git aparecerão em verde, os que não estão aparecem em vermeho);
+ executo git commit -m "mensagem-do-commit" (para adicionar um ponto na história daquele projeto);
+ executo git branch -M "main" (para mudar da branch master, que é a nomenclatura usada no git, para main, que é a nomenclatura usada hoje no  Github);
+ executo git push -u origin main(para subir os arquivos que estão no repositório local para o repositório remoto);
+Isso faço toda vez que subo o código pela primeira vez, a partir do 2° commit que faço sigo os próximos passos:
+ git add .
+ git status
+ git commit -m "mensagem-do-commit"
+ git push origin main
